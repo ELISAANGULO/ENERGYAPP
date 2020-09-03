@@ -285,7 +285,7 @@ function getData() {
 
     // Completamiento
   document.getElementById("resultados_completamiento").innerHTML =
-  '<div class="card_d my-5"><div class="card_header" id="solcomple"><h3>Completamiento <b>' +
+  '<div class="card_d my-5"><div class="card_header" id="solcomple"><h3>Completion<b>' +
   visualizar +
   '</b></h3></div><div class="card_body"><p class="mb-0">Completion Crews: <span><b>' +
   equipos_completamiento +
