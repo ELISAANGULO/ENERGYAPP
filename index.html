@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ENERGY TEAM | "START ACTING,STOP TALKING"</title>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="1.css">
+  <link rel="stylesheet" href="2.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  
+</head>
+
+<link rel="icon" href="imagenes/energy.ico">
+<style>
+  body,
+  h1,
+  h3 {
+    font-family: "Lato", sans-serif;
+  }
+
+  body,
+  html {
+    height: 100%;
+    color: rgb(15, 15, 15);
+    line-height: 1.8;
+  }
+
+  body,
+  h2,
+  h4,
+  h5,
+  h6 {
+    font-family: "Lato", sans-serif;
+    text-align: justify;
+  }
+
+  body,
+  html {
+    height: 100%;
+    color: rgb(15, 15, 15);
+    line-height: 1.8;
+
+  }
+
+  /* Create a Parallax Effect */
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* First image (Logo. Full height) */
+
+
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    background-image: url("/w3images/parallax2.jpg");
+    min-height: 400px;
+  }
+
+  /* Third image (Contact) */
+  .bgimg-3 {
+    background-image: url("/w3images/parallax3.jpg");
+    min-height: 400px;
+  }
+
+  .w3-wide {
+    letter-spacing: 10px;
+  }
+
+  .w3-hover-opacity {
+    cursor: pointer;
+  }
+
+  .w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 50px;
+  bottom: 300px;
+  height: inherit;
+  background: rgb(181, 181, 184);
+}
+
+ 
+
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1600px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
+  }
+</style>
+
+<body>
+
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+      onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="https://energy-team-sinergia2020.github.io/Energy-Team-Home/" class="w3-bar-item w3-button">HOME</a>
+    <a href="https://energy-team-sinergia2020.github.io/ENERGY-TEAM-YNC3/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> YNC</a>
+    <a href="https://energy-team-sinergia2020.github.io/ENERGY-TEAM-APP/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-paper-plane"></i> ENERGY TEAM- APP</a>
+    <a href="https://energy-team-sinergia2020.github.io/Energy-team-papers/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> TECHNICAL PAPERS</a>
+    <a href="https://energy-team-sinergia2020.github.io/Energy-Team-About-Us/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT US</a>
+    <a href="https://energy-team-sinergia2020.github.io/Energy-Team-About-Us/#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="https://energy-team-sinergia2020.github.io/Energy-Team-Home/" class="w3-bar-item w3-button">HOME</a>
+    <a href="https://energy-team-sinergia2020.github.io/ENERGY-TEAM-YNC3/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> YNC</a>
+    <a href="https://energy-team-sinergia2020.github.io/ENERGY-TEAM-APP/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-paper-plane"></i> ENERGY TEAM- APP</a>
+    <a href="https://energy-team-sinergia2020.github.io/Energy-Team-About-Us/" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="https://energy-team-sinergia2020.github.io/Energy-team-papers/" class="w3-bar-item w3-button" onclick="toggleFunction()">TECHNICAL PAPERS</a>
+    <a href="https://energy-team-sinergia2020.github.io/Energy-Team-About-Us/#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- Menu para el dashboart-->
+
+<nav class="w3-sidebar  w3-animate-left" style="z-index:3;width:180px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+  
+    <div class="w3-col s8 w3-bar">
+      <span>Energy-Team <strong>APP</strong></span><br>
+
+    </div>
+  </div>
+
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-arrow-up fa-fw"></i>  Ingreso datos</a>
+    <a href="#solperfo" class="w3-bar-item w3-button w3-padding"><i class="fa fa-remove fa-fw"></i>  Perforación</a>
+    <a href="#solcomple" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th fa-fw"></i>  Completamiento</a>
+    <a href="#solfrac" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Fracturamiento</a>
+    <a href="#solprod" class="w3-bar-item w3-button w3-padding"><i class="fa fa-file fa-fw"></i>  Producción</a>
+    <a href="#solloc" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Locación</a>
+    <a href="#solper" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Personal</a>
+    <a href="" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i> Analisis Economico </a>
+    <a href="" class="w3-bar-item w3-button w3-padding"><i class="fa fa-paper-plane fa-fw"></i>  Timeline</a><br><br>
+  </div>
+</nav>
+
+
+
+<!-- First Parallax Image with Logo Text -->
+
+<div class=" w3-padding-48"></div>
+
+<div class= "w3-center w3-panel w3-topbar w3-bottombar w3-border-red w3-content w3-container w3-padding-64 col-md-8 " >
+  <h3 class="animated infinite bounce delay-2s">ENERGY TEAM APP</h3>
+  <p class="w3-center"><em>"Start acting,stop talking"</em></p>
+</div>
+
+<div class=" w3-padding-24"></div>
+
+<div class="container my-5 pt-6"></div>
+<div class="row mb-3">
+  <div class="col-md-2 "></div>
+
+  <div class="col-md-8">
+    <h1 class="text-primary text-center"> Ingreso de Datos </h1>
+    <br>
+    <p class="text-justify">A continuación, ingrese la información del desarrollo de no convencionales en Colombia. Toda la información es requerida.</p>
+
+
+    <div>
+      <form  action="file:///D:/UIS/Sinergia/pag%20web/Hotsneural-master/templates/economicanalysis.html" name="registro" class="form-row" >
+
+
+
+        <h1 class="text-primary text-center"> Duración de las operaciones YNC </h1>
+        <div class=" w3-padding-48"></div>
+
+        <div class="form-group col-md-6">
+          <label>Inicio del proyecto</label>
+          <div class="input-group">
+            <input type="number" name="inicio" id="inicio" class="form-control" placeholder="Inicio proyecto" aria-label="inicio" aria-describedby="AreaUnits" required>
+            <div class="input-group-append">
+              <span class="input-group-text" >Año</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label>Final del proyecto</label>
+
+          <div class="input-group">
+            <input type="number" name="fin" id="fin" class="form-control" placeholder="Final proyecto" aria-label="fin" aria-describedby="AreaUnits"  required>
+            <div class="input-group-append">
+              <span class="input-group-text" >Año</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label>Año a visualizar</label>
+
+          <div class="input-group">
+            <input type="number" name="visualizar" id="visualizar" class="form-control" placeholder="Año a visualizar" aria-label="fin" aria-describedby="AreaUnits" required>
+            <div class="input-group-append">
+              <span class="input-group-text" >Año</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="form-group col-md-6">
+          <label>Días Para Perforar un Pozo</label>
+
+          <div class="input-group">
+            <input type="number" name="perfo" id="perfo" class="form-control" placeholder="Días Para Perforar un Pozo" aria-label="Perforación" aria-describedby="PorosidadUnits"  required>
+            <div class="input-group-append">
+              <span class="input-group-text" >Días</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label>Días para Completar un pozo</label>
+
+          <div class="input-group">
+            <input type="number" name="comple" id="comple" class="form-control" placeholder="Días para Completar un pozo" aria-label="Permeabilidad" aria-describedby="PermeabilidadUnits" required>
+            <div class="input-group-append">
+              <span class="input-group-text" >Días</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col-md-6">
+          <label> Días Testing and Clean Up por pozo</label>
+
+          <div class="input-group">
+            <input type="number" class="form-control" name="testing" id="testing" placeholder="Días Testing and Clean Up por pozo" aria-label="Profundidad" aria-describedby="ProfundidadUnits"  required>
+            <div class="input-group-append">
+              <span class="input-group-text" >Días</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col-md-6">
+          <label>Días de Tie-in por pozo</label>
+
+          <div class="input-group">
+            <input type="number" class="form-control" name="tie" id="tie" placeholder="Tie-in" aria-label="Días de Tie-in por pozo" aria-describedby="GravedadAPIUnits" step="any" min="1" required>
+            <div class="input-group-append">
+              <span class="input-group-text" >Días</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col-md-6">
+          <label>Días de Drawback por pozo</label>
+
+          <div class="input-group">
+            <input type="number" class="form-control" name="Drowback" id="Drowback" placeholder="Días de Drawback por pozo" aria-label="Drowback" aria-describedby="ViscosidadUnits"  required>
+            <div class="input-group-append">
+              <span class="input-group-text" >Días</span>
+            </div>
+          </div>
+        </div>
+
+        <div class=" w3-padding-48"></div>
+        <h1 class="text-primary text-center"> Ingreso Condiciones de Localización </h1>
+
+        <div class="form-group col-md-6">
+          <label>Número de pozos anuales</label>
+
+          <div class="input-group">
+            <input type="number" name="pozos" id="pozos" class="form-control" placeholder="Número de pozos anuales" aria-label="Número de pozos anuales" aria-describedby="AreaUnits" required>
+            <div class="input-group-append">
+              <span class="input-group-text" >#</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="form-group col-md-6">
+          <label>Distancia entre cabezales</label>
+
+          <div class="input-group">
+            <input type="number" class="form-control" name="cabezal" id="cabezal" placeholder="Distancia entre cabezales" aria-label="Distancia entre cabezales" aria-describedby="GravedadAPIUnits"  required>
+            <div class="input-group-append">
+              <span class="input-group-text" >Días</span>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class=" w3-padding-48"></div>
+        <h1 class="text-primary text-center"> Ingreso Datos Para La Perforación </h1>
+        <div class="form-group col-md-6">
+
+          <label>Profundidad del pozo</label>
+
+          <div class="input-group">
+            <input type="number" class="form-control" name="profundidad" id="profundidad" placeholder="Profundidad del pozo" aria-label="profundidad" aria-describedby="ViscosidadUnits" required>
+            <div class="input-group-append">
+              <span class="input-group-text" >ft</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col-md-6">
+          <label>Personal por cuadrilla</label>
+
+          <div class="input-group">
+            <input type="number" class="form-control" name="team2" id="team1" placeholder="Personal por cuadrilla" aria-label="team1" aria-describedby="ViscosidadUnits" required>
+            <div class="input-group-append">
+              <span class="input-group-text" >#</span>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class=" w3-padding-48"></div>
+        <h1 class="text-primary text-center"> Ingreso De Datos Para Completamiento </h1>
+
+        <div class="form-group col-md-6">
+          <label>Cantidad de cemento por pozo</label>
+
+          <div class="input-group">
+            <input type="number" class="form-control" name="cemento" id="cemento" placeholder="Cantidad de cemento por pozo" aria-label="cemento" aria-describedby="ViscosidadUnits"  required>
+            <div class="input-group-append">
+              <span class="input-group-text"> m<sup>3</sup> </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col-md-6">
+          <label>Personal por cuadrilla</label>
+
+          <div class="input-group">
+            <input type="number" class="form-control" name="team2" id="team2" placeholder="Personal por cuadrilla" aria-label="team2" aria-describedby="ViscosidadUnits" required>
+            <div class="input-group-append">
+              <span class="input-group-text" >#</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col-md-6">
+          <label>Cantidad de propante</label>
+
+          <div class="input-group">
+            <input type="number" class="form-control" name="arena" id="arena" placeholder="Cantidad de propante" aria-label="arena" aria-describedby="ViscosidadUnits" required>
+            <div class="input-group-append">
+              <span class="input-group-text" >Ton</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col-md-6">
+          <label>Agua requerida por pozo</label>
+
+          <div class="input-group">
+            <input type="number" class="form-control" name="agua" id="agua" placeholder="Agua requerida por pozo" aria-label="agua" aria-describedby="ViscosidadUnits" required>
+            <div class="input-group-append">
+              <span class="input-group-text" > m<sup>3</sup> </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col-md-6">
+          <label>Agua de Flowback reciclable</label>
+
+          <div class="input-group">
+            <input type="number" class="form-control" name="flowback" id="flowback" placeholder="Agua de Flowback reciclable" aria-label="flowback" aria-describedby="ViscosidadUnits" required>
+            <div class="input-group-append">
+              <span class="input-group-text" > m<sup>3</sup> </span>
+            </div>
+          </div>
+        </div>
+        
+        <div class=" w3-padding-48"></div>
+        <h1 class="text-primary text-center">Ingreso de Datos Para producción </h1>
+
+
+        <div class="form-group col-md-6">
+          <label>Producción de gas por Pozo</label>
+
+          <div class="input-group">
+            <input type="number" class="form-control" name="gas" id="gas" placeholder=" Producción de gas por pozo" aria-label="Drowback" aria-describedby="ViscosidadUnits"  required>
+            <div class="input-group-append">
+              <span class="input-group-text" >Mscf</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label>Producción de crudo por pozo</label>
+
+          <div class="input-group">
+            <input type="number" class="form-control" name="crudo" id="crudo" placeholder="Producción de crudo por pozo" aria-label="crudo" aria-describedby="ViscosidadUnits"  required>
+            <div class="input-group-append">
+              <span class="input-group-text" >Bbl</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label>Declinación Anual</label>
+
+          <div class="input-group">
+            <input type="number" class="form-control" name="declinacion" id="declinacion" placeholder="Declinación Anual" aria-label="declinacion" aria-describedby="ViscosidadUnits"  required>
+            <div class="input-group-append">
+              <span class="input-group-text" >%</span>
+            </div>
+          </div>
+        </div>
+        <hr class="col-12">
+        
+        <div class=" w3-padding-48"></div>
+        <h1 class="text-primary text-center">Ingreso de Datos Personal De Soporte </h1>
+
+        <div class="form-group col-md-6">
+          <label>Personal de soporte</label>
+
+          <div class="input-group">
+            <input type="number" class="form-control" name="team3" id="team3" placeholder="Personal de soporte" aria-label="declinacion" aria-describedby="ViscosidadUnits"  required>
+            <div class="input-group-append">
+              <span class="input-group-text" >#</span>
+            </div>
+          </div>
+        </div>
+        
+
+  <!--.............................................. Creación de botones ---------------------------------------------------------->
+        <br>      
+        <div class=" w3-padding-48"></div>
+        <div class="clearfix col-12">
+          <button type="button" id="val" onclick="validar()" value="validar" class="btn btn-dark px-5 float-md-right mt-3">Validar</button > <br> <br>
+          <button type="button"  onclick="getData()" value="Enviar" class="btn btn-dark px-5 float-md-right mt-3">Enviar</button > <br> <br>
+          <button type="reset" id="lim"  class="btn btn-danger px-5 float-md-right mt-3" style="max-width: 131.483px ;">Limpiar</button>
+        </div>
+      </form>
+    </div>
+   
+    <!--.............................................. Obtención de resultados de app.js---------------------------------------------------------->
+
+    <div id="resultados_perforacion" style="margin-top: 100px;">
+      <!-- Perforacion -->
+    </div>
+    <div id="resultados_completamiento">
+      <!-- Completamiento -->
+    </div>
+    <div id="resultados_fracturamiento">
+      <!-- Fracturamiento -->
+    </div>
+    <div id="tabla_drawback">
+      <!-- Tabla drawback -->
+    </div>
+    <div id="resultados_locacion">
+      <!-- Locacion -->
+    </div>
+    <div id="resultados_logistica">
+      <!-- Locacion -->
+    </div>
+    <div id="tabla_logistica" style="display: none;">
+      <!-- Tabla logistica -->
+      <div class="tab col-12 mt-5"><button class="tablinks" onclick="openCity(event, 'perforacion')">Cuadrilla de completamiento</button><button class="tablinks" onclick="openCity(event, 'completamiento')">Cuadrilla de perforacion</button><button class="tablinks" onclick="openCity(event, 'soporte')">Cuadrilla de soporte</button></div><div id="perforacion" class="tabcontent"><table class="table"><caption>Cuadrilla de completamiento</caption><thead><tr><th scope="col">Personas</th><th scope="col">Equipo de perforación por pozo</th><th scope="col">Horas</th></tr></thead><tbody><tr><th scope="row">1</th><td>Company man</td><td>12h</td></tr><tr><th scope="row">1</th><td>Company man Assistant</td><td>8h</td></tr><tr><th scope="row">2</th><td>Derryck Man</td><td>8h</td></tr><tr><th scope="row">2</th><td>Floor Man</td><td>8h</td></tr><tr><th scope="row">2</th><td>Roughneck</td><td>8h</td></tr><tr><th scope="row">2</th><td>Roustabout</td><td>8h</td></tr><tr><th scope="row">2</th><td>Electrical and Mechanical Maintenance</td><td>8h</td></tr><tr><th scope="row">2</th><td>Instrument Technician</td><td>8h</td></tr><tr><th scope="row">2</th><td>Completion Specialist</td><td>8h</td></tr><tr><th scope="row">2</th><td>Perforating Team</td><td>8h</td></tr><tr><th scope="row">3</th><td>Reservoir Team</td><td>8h</td></tr><tr><th scope="row">3</th><td>Well Log Team</td><td>8h</td></tr></tbody></table></div><div id="completamiento" class="tabcontent"><table class="table"><caption>Cuadrilla de perforacion</caption><thead><tr><th scope="col">Personas</th><th scope="col">Equipo de perforación por pozo</th><th scope="col">Horas</th></tr></thead><tbody><tr><th scope="row">1</th><td>Company man</td><td>12h</td></tr><tr><th scope="row">1</th><td>Company man Assistant</td><td>8h</td></tr><tr><th scope="row">2</th><td>Derryck Man</td><td>8h</td></tr><tr><th scope="row">2</th><td>Floor Man</td><td>8h</td></tr><tr><th scope="row">2</th><td>Roughneck</td><td>8h</td></tr><tr><th scope="row">2</th><td>Roustabout</td><td>8h</td></tr><tr><th scope="row">2</th><td>Electrical and Mechanical Maintenance</td><td>8h</td></tr><tr><th scope="row">2</th><td>Instrument Technician</td><td>8h</td></tr></tbody></table></div><div id="soporte" class="tabcontent"><table class="table"><caption>Cuadrilla de soporte</caption><thead><tr><th scope="col">Dual Log Team</th><th scope="col">Cementation</th></tr></thead><tbody><tr><td>Operator Engineer <br> Unit Operator <br> 2 Instrument Technicians</td><td>Company man <br> Supervisor <br> 2 Helpers</td></tr></tbody></table><table class="table"><caption>Cuadrilla de soporte</caption><thead><tr><th scope="col">Mud Team</th><th scope="col">Wellhead Installation</th></tr></thead><tbody><tr><td>Chemist <br> Mud Engineer <br> 2 Instrument Technicians</td><td>Supervisor <br> 3 Technician </td></tr></tbody></table><table class="table"><caption>Cuadrilla de soporte</caption><thead><tr><th scope="col">Pipeline Installation</th><th scope="col">Welder & Instrument Technicians</th></tr></thead><tbody><tr><td>Supervisor <br> 3 Technician</td><td>Supervisor <br> 3 Technician</td></tr></tbody></table>
+      </div>
+    </div>
+    <div id="produccion">
+      <!-- Producción -->
+    </div>
+    <div id="PDF">
+      <!-- Producción -->
+    </div>
+
+     <!--Información que estara contenida en el PDF-->
+
+
+    <div id=pasarpdf style="display: none;">
+      <div id="resultados_perforacion" style="margin-top: 100px;">
+        <!-- Perforacion -->
+      </div>
+      <div id="resultados_completamiento">
+        <!-- Completamiento -->
+      </div>
+      <div id="resultados_fracturamiento">
+        <!-- Fracturamiento -->
+      </div>
+      <div id="tabla_drawback">
+        <!-- Tabla drawback -->
+      </div>
+      <div id="resultados_locacion">
+        <!-- Locacion -->
+      </div>
+      <div id="resultados_logistica">
+        <!-- Locacion -->
+      </div>
+      <div id="tabla_logistica" style="display: none;">
+        <!-- Tabla logistica -->
+        <div class="tab col-12 mt-5"><button class="tablinks" onclick="openCity(event, 'perforacion')">Cuadrilla de completamiento</button><button class="tablinks" onclick="openCity(event, 'completamiento')">Cuadrilla de perforacion</button><button class="tablinks" onclick="openCity(event, 'soporte')">Cuadrilla de soporte</button></div><div id="perforacion" class="tabcontent"><table class="table"><caption>Cuadrilla de completamiento</caption><thead><tr><th scope="col">Personas</th><th scope="col">Equipo de perforación por pozo</th><th scope="col">Horas</th></tr></thead><tbody><tr><th scope="row">1</th><td>Company man</td><td>12h</td></tr><tr><th scope="row">1</th><td>Company man Assistant</td><td>8h</td></tr><tr><th scope="row">2</th><td>Derryck Man</td><td>8h</td></tr><tr><th scope="row">2</th><td>Floor Man</td><td>8h</td></tr><tr><th scope="row">2</th><td>Roughneck</td><td>8h</td></tr><tr><th scope="row">2</th><td>Roustabout</td><td>8h</td></tr><tr><th scope="row">2</th><td>Electrical and Mechanical Maintenance</td><td>8h</td></tr><tr><th scope="row">2</th><td>Instrument Technician</td><td>8h</td></tr><tr><th scope="row">2</th><td>Completion Specialist</td><td>8h</td></tr><tr><th scope="row">2</th><td>Perforating Team</td><td>8h</td></tr><tr><th scope="row">3</th><td>Reservoir Team</td><td>8h</td></tr><tr><th scope="row">3</th><td>Well Log Team</td><td>8h</td></tr></tbody></table></div><div id="completamiento" class="tabcontent"><table class="table"><caption>Cuadrilla de perforacion</caption><thead><tr><th scope="col">Personas</th><th scope="col">Equipo de perforación por pozo</th><th scope="col">Horas</th></tr></thead><tbody><tr><th scope="row">1</th><td>Company man</td><td>12h</td></tr><tr><th scope="row">1</th><td>Company man Assistant</td><td>8h</td></tr><tr><th scope="row">2</th><td>Derryck Man</td><td>8h</td></tr><tr><th scope="row">2</th><td>Floor Man</td><td>8h</td></tr><tr><th scope="row">2</th><td>Roughneck</td><td>8h</td></tr><tr><th scope="row">2</th><td>Roustabout</td><td>8h</td></tr><tr><th scope="row">2</th><td>Electrical and Mechanical Maintenance</td><td>8h</td></tr><tr><th scope="row">2</th><td>Instrument Technician</td><td>8h</td></tr></tbody></table></div><div id="soporte" class="tabcontent"><table class="table"><caption>Cuadrilla de soporte</caption><thead><tr><th scope="col">Dual Log Team</th><th scope="col">Cementation</th></tr></thead><tbody><tr><td>Operator Engineer <br> Unit Operator <br> 2 Instrument Technicians</td><td>Company man <br> Supervisor <br> 2 Helpers</td></tr></tbody></table><table class="table"><caption>Cuadrilla de soporte</caption><thead><tr><th scope="col">Mud Team</th><th scope="col">Wellhead Installation</th></tr></thead><tbody><tr><td>Chemist <br> Mud Engineer <br> 2 Instrument Technicians</td><td>Supervisor <br> 3 Technician </td></tr></tbody></table><table class="table"><caption>Cuadrilla de soporte</caption><thead><tr><th scope="col">Pipeline Installation</th><th scope="col">Welder & Instrument Technicians</th></tr></thead><tbody><tr><td>Supervisor <br> 3 Technician</td><td>Supervisor <br> 3 Technician</td></tr></tbody></table>
+        </div>
+      </div>
+      <div id="produccion">
+        <!-- Producción -->
+      </div>
+    </div>
+    
+    
+
+    
+
+
+
+    
+
+    </div>
+   
+  <div class="col-md-2"></div>
+</div>
+<div class=" w3-padding-48"></div>
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="imagenes/energy.jpg" style="width:100%">
+  <img class="mySlides" src="imagenes/halliburton.jpg" style="width:100%">
+  <img class="mySlides" src="imagenes/spe.jpg" style="width:100%">
+</div>
+<script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() 
+  {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) 
+    {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) 
+      {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+</script>
+
+<div class=" w3-padding-48"></div>    
+
+<!-- Footer -->
+
+<footer class="w3-center w3-black w3-padding-64 w3-opacity  w3-padding-large w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+
+  </div>
+  <p><a href="https://www.youtube.com/channel/UCYCd8VJ8LEYooT8N5Ppe4wQ" title="ENERGY TEAM" target="_blank"
+    class="w3-hover-text-green">"Energy Team" <BR>CLIK</BR></a></p>
+  </footer>
+</div>
+<script>
+    // Modal Image Gallery
+    function onClick(element) 
+    {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function () { myFunction() };
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+  </script>
+
+  <script type="text/javascript" src="app.js"></script>
+   <script type="text/javascript" src="validar.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+  <script type="text/javascript" src="generarpdf.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+  
+
+ 
+</body>
+</html>
